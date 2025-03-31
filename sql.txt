@@ -1,0 +1,17 @@
+CREATE TABLE doctors (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    specialization VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE appointments (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    date DATE NOT NULL,
+    doctor_id INT,
+    FOREIGN KEY (doctor_id) REFERENCES doctors(id)
+);
+
+-- Insert sample doctor
+INSERT INTO doctors (name, specialization) VALUES ('Dr. Smith', 'Cardiologist');
