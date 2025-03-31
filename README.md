@@ -77,22 +77,6 @@ Or **WAMP** from [https://www.wampserver.com/en/](https://www.wampserver.com/en/
 2. Paste it inside `htdocs` (`C:\xampp\htdocs\`).  
 
 ### **5️⃣ Update Database Connection**
-Open `db.php` and update the database name:  
-
-```php
-$host = "localhost";
-$user = "root"; // Change if necessary
-$password = ""; // Change if necessary
-$database = "apooiment_system"; // Update database name
-
-$conn = new mysqli($host, $user, $password, $database);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-?>
-```
-
-### **6️⃣ Run the Project**
 1. Open your browser.  
 2. Go to:  
    👉 `http://localhost/[project_folder]/index.php`  
