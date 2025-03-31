@@ -20,6 +20,7 @@ This is a simple **Doctor Appointment Booking System** built with **PHP and MySQ
 /[project_folder]/
 │-- db.php          # Database connection file
 │-- index.php       # Main page for booking appointments
+│-- sql.txt         #db details
 │-- README.md       # Instructions to run the project
 ```
 
